@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Bebas Neue;;
+    src: url(BebaseNeue+Regular.eot);
+
+}
+
+:root {
+    --primary-color: #0a0a0a;
+    --secondary-color: #ffffff;
+}
+ 
+
+html {
+    font-family: Bebas Neue, Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 1;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+a {
+    color: currentColor;
+}
+
+a.button {
+    display: inline-block;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 0.25rem 0.75rem 0.15rem 0.75rem;
+    border-radius: 0.25rem;
+}
+
+header {
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    height: 4rem;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+header nav {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+}
+
+section.sneaker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+section.new-drop {
+    min-height: calc(100vh - 4rem);
+    padding: 2rem;
+
+    display: flex;
+    align-items: end;
+}
+
+section.new-drop img {
+    width: 100%;
+}
+
+section.content {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    font-size: 3rem;
+    margin: 3rem 0 5rem 0;
+
+}
+
+section.content p {
+    position: relative;
+    z-index: 2;
+}
