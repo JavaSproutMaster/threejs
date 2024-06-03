@@ -1,8 +1,18 @@
 {
-  "dependencies": {
-    "three": "^0.164.1"
+  "name": "normal_sneakers",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^5.2.11"
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "motion": "^10.18.0",
+    "three": "^0.165.0"
   }
 }
