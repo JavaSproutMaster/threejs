@@ -105,7 +105,7 @@ scrollGroup.add(loadGroup)
 
 scene.add( scrollGroup );
 
-gltfLoader.load('car.glb', (gltf) => {
+gltfLoader.load('sneaker.glb', (gltf) => {
     loadGroup.add(gltf.scene)
     animate((t) => {
         loadGroup.position.y = -10 + 10 * t
@@ -123,7 +123,7 @@ controls.autoRotateSpeed = 2
 controls.update()
 
 
-camera.position.z = 3.5;
+camera.position.z = 0.7;
 
 // Post Processing
 const composer = new EffectComposer( renderer)
