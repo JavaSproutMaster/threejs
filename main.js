@@ -122,7 +122,6 @@ controls.autoRotate = true
 controls.autoRotateSpeed = 2
 controls.update()
 
-
 camera.position.z = 0.7;
 
 // Post Processing
